@@ -1,0 +1,15 @@
+.angulardoc.json
+.nyc_output
+.scannerwork/.sonar_lock
+.scannerwork/report-task.txt
+
+app
+coverage
+dist
+logs
+files
+**/keys
+node_modules
+
+env.sh
+

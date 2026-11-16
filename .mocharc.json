@@ -1,0 +1,12 @@
+{
+    "bail": true,
+    "require": [
+        "ts-node/register"
+    ],
+    "timeout": false,
+    "spec": "test/**/*.spec.ts",
+    "watch-files": [
+        "test/**/*.ts",
+        "src/**/*.ts"
+    ]
+}

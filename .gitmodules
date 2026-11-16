@@ -1,0 +1,5 @@
+# this isn't a real submodule, but only used so that vscode can properly load the nested git repo
+# you can commit any changes to this fake submodule
+[submodule "app"]
+	path = app
+	url = dummy_string_to_satisfy_vscode

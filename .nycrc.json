@@ -1,0 +1,28 @@
+{
+    "all": true,
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "**/*.spec.ts",
+        "**/*.d.ts"
+    ],
+    "extension": [
+        ".ts"
+    ],
+    "require": [
+        "ts-node/register"
+    ],
+    "reporter": [
+        "cobertura",
+        "text-summary",
+        "html"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "check-coverage": true,
+    "lines": "0",
+    "functions": "0",
+    "branches": "0",
+    "statements": "0"
+}

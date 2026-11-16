@@ -1,0 +1,19 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "delay": 100,
+  "execMap": {
+    "ts": "node --import @swc-node/register/esm-register"
+  },
+  "watch": ["app", "src"],
+  "ext": "ts",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "logs/*.*",
+    "files/**/*.*",
+    "jwt-data*.*",
+    "nodemon.json",
+    "**/*.spec.ts"
+  ]
+}

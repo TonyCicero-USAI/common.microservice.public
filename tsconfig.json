@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": false,
+    "baseUrl": "./",
+    "module": "nodenext",
+    "esModuleInterop": true,
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "sourceMap": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "custom_typings",
+      "node_modules/@types"
+    ],
+    // REQUIRED FOR @Property(), reflect-metadata, and runtime type reflection
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "paths": {
+      "@app/*": ["app/*"],
+      "@src/*": ["src/*"],
+      "@config/*" : ["config/*"],
+      "@test/*": ["test/*"]
+    },
+    "allowJs": true,
+    "preserveSymlinks": true,
+    "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]
+  },
+  "include": [
+    "src/**/*",
+    "app/**/*"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./app/node_modules",
+    "src/**/*.spec.ts",
+    "dist",
+    "test/*"
+  ],
+  "ts-node": {
+    "esm": true
+  }
+}
