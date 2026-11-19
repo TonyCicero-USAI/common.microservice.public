@@ -107,5 +107,8 @@
   "_moduleAliases": {
     "@app": "app",
     "@src": "src"
+  },
+  "allowScripts": {
+    "mongodb-memory-server@11.3.0": true
   }
 }
